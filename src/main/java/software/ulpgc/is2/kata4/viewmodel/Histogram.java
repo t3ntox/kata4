@@ -8,8 +8,9 @@ public class Histogram implements Iterable<Integer>{
     private final Map<Integer, Integer> map;
     private Map<String, String> labels;
 
-    public Histogram() {
+    public Histogram(HashMap<String, String> labels) {
         this.map = new HashMap<>();
+        this.labels = labels;
     }
 
     public void put(int bin) {
